@@ -1,0 +1,12 @@
+<h2>Cadastrar cliente: </h2>
+
+<form>
+<p>Nome:</p> <input type="text" name="nome" [(ngModel)]="client.nome">
+<p>Apelido:</p>  <input type="text" name="apelido" [(ngModel)]="client.apelido">
+<p>Time:</p>  <input type="text" name="time" [(ngModel)]="client.time">
+<p>CPF:</p>  <input type="number" name="CPF" [(ngModel)]="client.CPF">
+<p>Hobbie:</p> <input type="text" name="hobbie" [(ngModel)]="client.hobbie">
+<p>Cidade:</p><input type="text" name="cidade" [(ngModel)]="client.cidade">
+<button type="button" (click)="addClients()">Cadastrar</button>
+</form>
+<br>

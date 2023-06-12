@@ -1,0 +1,23 @@
+<h2>Clientes:</h2>
+<table>
+  <tr>
+    <th>#id</th>
+    <th>nome</th>
+    <th>apelido</th>
+    <th>time</th>
+    <th>cpf</th>
+    <th>hobbie</th>
+    <th>cidade</th>
+  </tr>
+  <tr *ngFor="let client of clients">
+    <td>{{ client.id }} </td>
+    <td>{{ client.nome }} </td>
+    <td>{{ client.apelido }} </td>
+    <td>{{ client.time }} </td>
+    <td>{{ client.cpf }} </td>
+    <td>{{ client.hobbie }} </td>
+    <td>{{ client.cidade }} </td>
+    <button>Atualizar</button>
+    <button>Deletar</button>
+  </tr>
+</table>
